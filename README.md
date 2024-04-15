@@ -4,7 +4,7 @@ Week 20 Challenge
 In this challenge I was given the task of creating a portfolio page for myself using React. It features the following:
 
 - About Me: a section containing preliminary information about myself
-- Knowledge & Skills: a section containing information about my current level of knowledge and skill set
+- Skills: a section containing information about my current level of knowledge and skill set
 - Projects: a section containing all web-development projects I have worked on with links to demos and/or repos
 - Contact Me: a section containing information to contact me
 
