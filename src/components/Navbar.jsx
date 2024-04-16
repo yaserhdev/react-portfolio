@@ -8,7 +8,9 @@ function Navbar() {
         <nav className='navbar'>
             <a href='/' className='title'>Portfolio</a>
             <div className='nav-menu'>
-                <Hamburger toggled={isOpen} size={20} toggle={setOpen} />
+                <div className='nav-menu-btn'>
+                    <Hamburger toggled={isOpen} size={20} toggle={setOpen} />
+                </div>
                 <ul className={`${'nav-items'} ${isOpen && 'is-open'}`} onClick={() => setOpen(false)}>
                     <li>
                         <a href='#about'>About</a>
