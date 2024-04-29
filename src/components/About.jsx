@@ -17,6 +17,8 @@ function About() {
                 </div>
                 <img src={getImageUrl('profile.jpg')} alt='Profile picture.' />
             </div>
+            <div className='about-top-blur' />
+            <div className='about-bottom-blur' />
         </section>
     );
 };

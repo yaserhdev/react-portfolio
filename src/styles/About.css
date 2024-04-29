@@ -1,7 +1,8 @@
 .about-container {
-    background-color: slategrey;
+    background-color: #686A6C;
     margin-top: 20px;
     border-radius: 10px;
+    color: white;
 }
 
 .about-title {
@@ -21,7 +22,6 @@
     margin-right: 5%;
     padding: 10px;
     padding-bottom: 30px;
-    color: black;
 }
 
 .about-content {
@@ -49,6 +49,34 @@
     animation-duration: 3s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
+}
+
+.about-top-blur {
+    position: absolute;
+    width: 50vw;
+    height: 50vw;
+    min-width: 350px;
+    min-width: 350px;
+    top: -128px;
+    left: 10vw;
+    border-radius: 764px;
+    background: rgb(25, 55, 109, 0.7);
+    filter: blur(100px);
+    z-index: 0;
+}
+
+.about-bottom-blur {
+    position: absolute;
+    width: 70vw;
+    height: 50vw;
+    min-width: 250px;
+    min-width: 350px;
+    top: 246px;
+    right: -25vw;
+    border-radius: 764px;
+    background: rgb(25, 55, 109, 0.7);
+    filter: blur(100px);
+    z-index: 0;
 }
 
 @keyframes hover {
