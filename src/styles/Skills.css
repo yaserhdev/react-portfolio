@@ -3,11 +3,16 @@
     margin-top: 20px;
     border-radius: 10px;
     color: white;
+    align-items: center;
 }
 
 .skills-title {
     padding: 20px 0 0 20px;
     width: 100%;
     font-size: 25px;
+    
+}
+
+@media screen and (max-width: 767px) {
     
 }

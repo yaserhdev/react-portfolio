@@ -1,10 +1,10 @@
 import React from 'react';
-import '../styles/About.css';
-import { getImageUrl } from '../utils/helpers';
+import '../../styles/Home.css';
+import { getImageUrl } from '../../utils/helpers';
 
-function About() {
+export default function Home() {
     return (
-        <section className='about-container'>
+        <div className='about-container'>
             <h1 className='about-title'>About</h1>
             <div className='about'>
                 <div className='about-content'>
@@ -19,8 +19,6 @@ function About() {
             </div>
             <div className='about-top-blur' />
             <div className='about-bottom-blur' />
-        </section>
+        </div>
     );
 };
-
-export default About;

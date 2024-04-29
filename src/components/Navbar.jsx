@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Squash as Hamburger } from 'hamburger-react'
 import '../styles/Navbar.css';
 
-function Navbar() {
+function Navbar({ currentPage, handlePageChange }) {
     const [isOpen, setOpen] = useState(false);
     return (
         <nav className='navbar'>
@@ -13,16 +13,19 @@ function Navbar() {
                 </div>
                 <ul className={`${'nav-items'} ${isOpen && 'is-open'}`} onClick={() => setOpen(false)}>
                     <li>
-                        <a href='#about'>About</a>
+                        <a href='#Home' onClick={() => handlePageChange('Home')} className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}>Home</a>
                     </li>
                     <li>
-                        <a href='#skills'>Skills</a>
+                        <a href='#About' onClick={() => handlePageChange('About')} className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}>About</a>
                     </li>
                     <li>
-                        <a href='#projects'>Projects</a>
+                        <a href='#skills' onClick={() => handlePageChange('Skills')} className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}>Skills</a>
                     </li>
                     <li>
-                        <a href='#contact'>Contact</a>
+                        <a href='#projects' onClick={() => handlePageChange('Projects')} className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}>Projects</a>
+                    </li>
+                    <li>
+                        <a href='#contact' onClick={() => handlePageChange('Contact')} className={currentPage === 'Home' ? 'nav-link active' : 'nav-link'}>Contact</a>
                     </li>
                 </ul>
             </div>

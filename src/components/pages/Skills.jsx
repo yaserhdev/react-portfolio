@@ -1,8 +1,8 @@
 import React from 'react';
-import '../styles/Skills.css';
-import { getImageUrl } from '../utils/helpers';
+import '../../styles/Skills.css';
+import { getImageUrl } from '../../utils/helpers';
 
-function Skills() {
+export default function Skills() {
     return (
         <section className='skills-container'>
             <h1 className='skills-title'>Skills</h1>
@@ -12,5 +12,3 @@ function Skills() {
         </section>
     );
 };
-
-export default Skills;
