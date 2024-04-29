@@ -4,6 +4,8 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 50px;
+    z-index: 2;
+    opacity: 0.85;
 }
 
 .title {
@@ -63,10 +65,10 @@
         background: #454748;
         background: linear-gradient(
             0deg,
-            #454748 0%,
-            #CBD2D5 100%
+            #406a7c 0%,
+            #808688 100%
         );
-        padding: 25px 30px;
+        padding: 15px 30px;
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
     }
     .is-open {
