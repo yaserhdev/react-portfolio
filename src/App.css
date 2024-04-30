@@ -1,11 +1,10 @@
-.main {
+.body {
     background-color: rgb(117, 144, 169);
-    height: 100;
-    padding-bottom: 35%;
+    height: 100vh;
 }
 
 @media screen and (max-width: 767px) {
-    .main {
+    .body {
         height: 100%;
     }
 }

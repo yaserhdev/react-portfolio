@@ -47,21 +47,21 @@
     animation-timing-function: ease-in-out;
 }
 
-.home-top-blur {
+/* .home-top-blur {
     position: absolute;
-    width: 50vw;
-    height: 50vw;
+    width: 40vw;
+    height: 40vw;
     min-width: 250px;
     min-width: 350px;
-    top: -128px;
-    left: 10vw;
+    top: 13vh;
+    left: 57vw;
     border-radius: 764px;
     background: rgb(25, 55, 109, 0.7);
     filter: blur(100px);
     z-index: 0;
-}
+} */
 
-.home-bottom-blur {
+/* .home-bottom-blur {
     position: absolute;
     width: 70vw;
     height: 50vw;
@@ -69,11 +69,12 @@
     min-width: 350px;
     top: 350px;
     left: 30vw;
+    bottom: 50px;
     border-radius: 764px;
     background: rgb(25, 55, 109, 0.7);
     filter: blur(100px);
     z-index: 0;
-}
+} */
 
 @keyframes hover {
     0% {
@@ -100,6 +101,6 @@
     }
 
     .home img {
-        margin-top: 45px;
+        margin: 0;
     }
 }

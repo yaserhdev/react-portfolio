@@ -5,6 +5,7 @@ import About from './pages/About';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
+import Footer from './Footer';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -23,15 +24,19 @@ export default function PortfolioContainer() {
     if (currentPage === 'Projects') {
         return <Projects />;
     }
-    return <Contact />;
+    if (currentPage === 'Contact') {
+      return <Contact />;
+  }
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <body className='body'>
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       <main className="mx-3">{renderPage()}</main>
-    </div>
+      <Footer />
+    </body>
+  
   );
 }
