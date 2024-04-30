@@ -28,6 +28,7 @@
     display: flex;
     gap: 40px;
     list-style: none;
+    margin-top: 15px;
     padding-right: 20px;
 }
 
@@ -55,6 +56,7 @@
     .nav-menu-btn {
         display: block;
         cursor: pointer;
+        margin-top: -25px;
     }
     .nav-items {
         display: none;
@@ -68,7 +70,8 @@
             #406a7c 0%,
             #808688 100%
         );
-        padding: 15px 30px;
+        padding: 15px 50px;
+        margin-right: -4px;
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
     }
     .is-open {
