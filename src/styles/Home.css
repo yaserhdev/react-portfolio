@@ -1,17 +1,11 @@
-.about-container {
+.home-container {
     background-color: #686A6C;
     margin-top: 20px;
     border-radius: 10px;
     color: white;
 }
 
-.about-title {
-    padding: 20px 0 0 20px;
-    width: 100%;
-    font-size: 25px;
-}
-
-.about {
+.home {
     position: relative;
     display: flex;
     align-items: center;
@@ -23,22 +17,25 @@
     padding-bottom: 30px;
 }
 
-.about-content {
+.home-content {
     display: flex;
     flex-direction: column;
     width: 60%;
 }
 
-.about-content h1 {
+.home-content h1 {
     margin-bottom: 0;
+    padding: 30px 0 20px 0;
     font-size: 30px;
 }
 
-.about-content p {
+.home-content p {
     font-size: 20px;
+    padding-top: 15px;
 }
 
-.about img {
+.home img {
+    margin-top: 10px;
     height: 250px;
     width: 250px;
     border: 3px solid;
@@ -50,7 +47,7 @@
     animation-timing-function: ease-in-out;
 }
 
-.about-top-blur {
+.home-top-blur {
     position: absolute;
     width: 50vw;
     height: 50vw;
@@ -64,7 +61,7 @@
     z-index: 0;
 }
 
-.about-bottom-blur {
+.home-bottom-blur {
     position: absolute;
     width: 70vw;
     height: 50vw;
@@ -91,14 +88,18 @@
 }
 
 @media screen and (max-width: 767px) {
-    .about {
+    .home {
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    .about-content {
+    .home-content {
         width: 85%;
         padding-top: 25px;
         align-items: center;
+    }
+
+    .home img {
+        margin-top: 40px;
     }
 }

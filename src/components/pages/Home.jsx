@@ -4,10 +4,9 @@ import { getImageUrl } from '../../utils/helpers';
 
 export default function Home() {
     return (
-        <div className='about-container'>
-            <h1 className='about-title'>About</h1>
-            <div className='about'>
-                <div className='about-content'>
+        <div className='home-container'>
+            <div className='home'>
+                <div className='home-content'>
                     <h1>Hey, I'm Raja!</h1>
                     <p>I'm a recent graduate of George Washington University's Coding Bootcamp.
                         In 6 months time I have gained knowledge and experience in full-stack web
@@ -17,8 +16,8 @@ export default function Home() {
                 </div>
                 <img src={getImageUrl('profile.jpg')} alt='Profile picture.' />
             </div>
-            <div className='about-top-blur' />
-            <div className='about-bottom-blur' />
+            <div className='home-top-blur' />
+            <div className='home-bottom-blur' />
         </div>
     );
 };
