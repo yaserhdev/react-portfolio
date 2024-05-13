@@ -6,6 +6,16 @@ import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Footer from './Footer';
+import styled from 'styled-components';
+
+const StyledMain = styled.main`
+  padding-bottom: 2.5rem;
+`;
+
+const StyledBody = styled.body`
+  position: relative;
+  min-height: 100vh;
+`;
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
@@ -32,11 +42,11 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <body className='body'>
+    <StyledBody className='body'>
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
-      <main className="mx-3">{renderPage()}</main>
+      <StyledMain className="mx-3">{renderPage()}</StyledMain>
       <Footer />
-    </body>
+    </StyledBody>
   
   );
 }

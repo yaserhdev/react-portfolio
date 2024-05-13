@@ -22,3 +22,9 @@
 .footer img {
     padding-right: 30px;
 }
+
+@media screen and (max-width: 767px) {
+    .footer {
+        height: 2.5rem;
+    }
+}
