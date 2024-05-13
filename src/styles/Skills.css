@@ -1,17 +1,115 @@
-.skills-container {
+.skills-experience-container {
     background-color: #686A6C;
     margin-top: 20px;
     border-radius: 10px;
     color: white;
 }
 
-.skills-title {
+.skills-experience-title {
     padding: 20px 0 0 20px;
     width: 100%;
-    font-size: 25px;
+    font-size: 30px;
     
 }
 
+.skills-experience-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%
+}
+
+.skills {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.skill-image {
+    background-color:#adb1b6;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+}
+
+.skill-image img {
+    width: 75px;
+}
+
+.skill p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.experience {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.experienceItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background: #adb1b6;
+    background: linear-gradient(90deg, #adb1b6 0%, rgba(25, 55, 109, 0) 100%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.experience-image {
+    width: 65px;
+}
+
+.experience-details h3 {
+    font-size: 27px;
+    font-weight: 500;
+}
+
+.experience-details p {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.experience-details ul {
+    margin-top: 5px;
+    font-size: 15px;
+    list-style-type: disc;
+    margin-left: 15px;
+}
+
 @media screen and (max-width: 767px) {
-    
+    .skills-experience-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .skills {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .experience {
+        width: 100%;
+        gap: 10px;
+        justify-content: center;
+    }
 }
