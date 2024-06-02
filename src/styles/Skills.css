@@ -16,9 +16,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 20px;
+    margin-top: 35px;
     margin-left: 5%;
-    margin-right: 5%
+    margin-right: 5%;
+    padding-bottom: 25px;
 }
 
 .skills {

@@ -9,17 +9,17 @@ export default function Footer() {
             <ul className='footer-icons'>
                 <li>
                     <a href='http://www.linkedin.com/in/raja-hussain-5ba148287'>
-                        <img src={getImageUrl('linked-in-icon.png')} alt='Linked-In icon.' />
+                        <img src={getImageUrl('linkedin.png')} alt='LinkedIn icon.' />
                     </a>
                 </li>
                 <li>
                     <a href='http://www.github.com/yaserhdev'>
-                        <img src={getImageUrl('github-icon.png')} alt='GitHub icon.' />
+                        <img src={getImageUrl('github.png')} alt='GitHub icon.' />
                     </a>
                 </li>
                 <li>
                     <a href='mailto:yaserh.dev@gmail.com'>
-                        <img src={getImageUrl('email-icon.png')} alt='Email icon.' />
+                        <img src={getImageUrl('email.png')} alt='Email icon.' />
                     </a>
                 </li>
             </ul>

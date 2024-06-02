@@ -1,0 +1,87 @@
+.about-container {
+    position: relative;
+    background-color: #686A6C;
+    margin-top: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.about-title {
+    padding: 20px 0 0 20px;
+    width: 100%;
+    font-size: 30px;
+}
+
+.about-content { 
+    padding: 25px;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    gap: 25px;
+}
+
+.about-content li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    padding: 25px;
+    width: 45%;
+    background-image: linear-gradient(90deg, rgba(165, 215, 232, 0.42) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 10px;
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+.about-content li:hover {
+    background-size: 100% 100%;
+}
+
+.about-content h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.about-content p {
+    font-size: 20px;
+}
+
+.monitor img {
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+.brain img {
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    .about-content li {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .monitor img {
+        margin-left: -10px;
+        margin-right: 17px;
+    }
+
+    .brain img {
+        margin-left: -10px;
+        margin-right: 3px;
+    }
+}
