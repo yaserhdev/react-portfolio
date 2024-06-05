@@ -9,12 +9,14 @@ import Footer from './Footer';
 import styled from 'styled-components';
 
 const StyledMain = styled.main`
-  padding-bottom: 2.5rem;
+  padding-bottom: 175px;
 `;
 
 const StyledBody = styled.body`
   position: relative;
   min-height: 100vh;
+  background-color: rgb(117, 144, 169);
+  background-size: 100%;
 `;
 
 export default function PortfolioContainer() {
@@ -32,11 +34,11 @@ export default function PortfolioContainer() {
       return <Skills />;
     }
     if (currentPage === 'Projects') {
-        return <Projects />;
+      return <Projects />;
     }
     if (currentPage === 'Contact') {
       return <Contact />;
-  }
+    }
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
@@ -47,6 +49,6 @@ export default function PortfolioContainer() {
       <StyledMain className="mx-3">{renderPage()}</StyledMain>
       <Footer />
     </StyledBody>
-  
+
   );
 }
